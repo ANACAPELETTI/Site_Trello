@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="board">
+      <h3>A fazer</h3>
+      <ul id="toDo" ondrop="drop(event, this.id)" ondragover="over(event)">
+        <li id="1" draggable="true" ondragstart="drag(event)">
+          <p>Dormir</p>
+          <p class="remove" onclick="removeCard(this)">x</p>
+        </li>
+        <li id="2" draggable="true" ondragstart="drag(event)">
+          <p>Estudar</p>
+          <p class="remove" onclick="removeCard(this)">x</p>
+        </li>
+      </ul>
+      <div class="add-card" onclick="addCard(this)">
+        <p>
+          Adicionar tarefa
+        </p>
+      </div>
+    </div>
+    <div class="board">
+      <h3>Fazendo</h3>
+      <ul
+        id="doing"
+        ondrop="drop(event, this.id)"
+        ondragover="over(event)"
+      ></ul>
+      <div class="add-card" onclick="addCard(this)">
+        <p>
+          Adicionar tarefa
+        </p>
+      </div>
+    </div>
+    <div class="board">
+      <h3>Feito</h3>
+      <ul id="done" ondrop="drop(event, this.id)" ondragover="over(event)"></ul>
+      <div class="add-card" onclick="addCard(this)">
+        <p>
+          Adicionar tarefa
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

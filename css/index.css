@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap");
+body {
+  background: rgb(0, 212, 255);
+  background: radial-gradient(
+    circle,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(9, 9, 121, 1) 100%
+  );
+
+  display: flex;
+  justify-content: center;
+}
+
+.board {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 300px;
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.add-card {
+  background-color: rgba(128, 128, 128, 0.3);
+  margin: 4px;
+  border-radius: 2px;
+}
+
+.add-card:hover {
+  cursor: pointer;
+}
+
+.remove {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.remove:hover {
+  background-color: rgba(255, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.add-card p {
+  font-size: 16px;
+  padding: 0 6px;
+}
+
+h3 {
+  background-color: rgba(36, 81, 230, 0.459);
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  min-height: 300px;
+  padding: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+li {
+  background-color: white;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  min-width: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 10px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+
+li:hover {
+  cursor: move;
+}
